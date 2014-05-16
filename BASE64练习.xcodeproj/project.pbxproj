@@ -21,6 +21,9 @@
 		6924375119108A040058FD61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6924373319108A040058FD61 /* UIKit.framework */; };
 		6924375919108A040058FD61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6924375719108A040058FD61 /* InfoPlist.strings */; };
 		6924375B19108A040058FD61 /* BASE64__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6924375A19108A040058FD61 /* BASE64__Tests.m */; };
+		6924376519108A1E0058FD61 /* File.html in Resources */ = {isa = PBXBuildFile; fileRef = 6924376419108A1E0058FD61 /* File.html */; };
+		692437C01910A6500058FD61 /* BASE64Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 692437BF1910A6500058FD61 /* BASE64Util.m */; };
+		692437C51910C87E0058FD61 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 692437C31910C87E0058FD61 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		6924375619108A040058FD61 /* BASE64练习Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BASE64练习Tests-Info.plist"; sourceTree = "<group>"; };
 		6924375819108A040058FD61 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6924375A19108A040058FD61 /* BASE64__Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BASE64__Tests.m; sourceTree = "<group>"; };
+		6924376419108A1E0058FD61 /* File.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = File.html; sourceTree = "<group>"; };
+		692437BE1910A6500058FD61 /* BASE64Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASE64Util.h; sourceTree = "<group>"; };
+		692437BF1910A6500058FD61 /* BASE64Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASE64Util.m; sourceTree = "<group>"; };
+		692437C21910C87E0058FD61 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		692437C31910C87E0058FD61 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		692437C41910C87E0058FD61 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +91,8 @@
 		6924372319108A040058FD61 = {
 			isa = PBXGroup;
 			children = (
+				692437C11910C87E0058FD61 /* GTMBase64 */,
+				6924376419108A1E0058FD61 /* File.html */,
 				6924373519108A040058FD61 /* BASE64练习 */,
 				6924375419108A040058FD61 /* BASE64练习Tests */,
 				6924372E19108A040058FD61 /* Frameworks */,
@@ -119,6 +130,8 @@
 				6924374519108A040058FD61 /* WSQViewController.m */,
 				6924374719108A040058FD61 /* Images.xcassets */,
 				6924373619108A040058FD61 /* Supporting Files */,
+				692437BE1910A6500058FD61 /* BASE64Util.h */,
+				692437BF1910A6500058FD61 /* BASE64Util.m */,
 			);
 			path = "BASE64练习";
 			sourceTree = "<group>";
@@ -150,6 +163,16 @@
 				6924375719108A040058FD61 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		692437C11910C87E0058FD61 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				692437C21910C87E0058FD61 /* GTMBase64.h */,
+				692437C31910C87E0058FD61 /* GTMBase64.m */,
+				692437C41910C87E0058FD61 /* GTMDefines.h */,
+			);
+			path = GTMBase64;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6924376519108A1E0058FD61 /* File.html in Resources */,
 				6924374819108A040058FD61 /* Images.xcassets in Resources */,
 				6924373A19108A040058FD61 /* InfoPlist.strings in Resources */,
 				6924374319108A040058FD61 /* Main.storyboard in Resources */,
@@ -252,6 +276,8 @@
 			files = (
 				6924374019108A040058FD61 /* WSQAppDelegate.m in Sources */,
 				6924374619108A040058FD61 /* WSQViewController.m in Sources */,
+				692437C51910C87E0058FD61 /* GTMBase64.m in Sources */,
+				692437C01910A6500058FD61 /* BASE64Util.m in Sources */,
 				6924373C19108A040058FD61 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
